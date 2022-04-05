@@ -1,7 +1,16 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Navbar from "../components/Navbar";
+import ProfileContainer from "../components/ProfileContainer";
 import styles from "../styles/Home.module.css";
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: document.body.scrollHeight,
+    behavior: "smooth",
+  });
+};
 
 const Home: NextPage = () => {
   return (
@@ -21,7 +30,10 @@ const Home: NextPage = () => {
             <span className="text-[40px]">OF OUR PEOPLE</span>
           </div>
 
-          <button className="border-[5px] rounded-lg border-black w-[196px] h-[68px] text-[20px]">
+          <button
+            onClick={() => scrollToTop()}
+            className="border-[5px] rounded-lg border-black w-[196px] h-[68px] text-[20px] hover:bg-red-300 hover:text-black"
+          >
             Explore
           </button>
         </section>
@@ -29,6 +41,11 @@ const Home: NextPage = () => {
           <Image className="" src="/globe.svg" width={400} height={400} />
         </section>
       </main>
+
+      <section className="w-screen h-screen">
+        <Navbar />
+        <ProfileContainer />
+      </section>
     </div>
   );
 };
