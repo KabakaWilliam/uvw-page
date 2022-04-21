@@ -1,29 +1,21 @@
 import { AdjustmentsIcon } from "@heroicons/react/outline";
+import OccupationOptions from "./OccupationOptions";
+
 const Navbar = () => {
   return (
-    <div className="w-screen h-[7vh] bg-gray-500 flex">
-      <div className="flex w-[30%] h-[100%] items-center justify-end  font-sans ">
-        <span className="text-white mr-3">Occupation</span>
-        <AdjustmentsIcon className="h-10 rotate-90" />
+    <div className="w-screen h-[7vh] bg-[#333333] flex gap-x-5 items-center justify-center">
+      <div className="font-sans text-[#CCCCCC] text-[18px]">Occupation</div>
+      <div className="w-[306px] h-[45px] rounded-[7px] bg-white flex items-center justify-center text-[#333333] font-sans">
+        <div className="w-[255px] h-[100%] flex items-center justify-end pr-[100px] a">
+          All
+        </div>
+        <div className="w-[51px] h-[100%] flex items-center justify-center cursor-pointer group">
+          <div className="w-[46px] h-[40px] rounded-[7px] bg-[#333333] flex items-center justify-center group-hover:bg-[#555353] relative">
+            <AdjustmentsIcon className="rotate-90 h-[15px] text-[#CCCCCC] group-hover:text-[#f8f7f7] " />
+            {/* <OccupationOptions /> */}
+          </div>
+        </div>
       </div>
-
-      <ul className="flex justify-start items-center w-[70%] h-[100%]  font-sans font-bold">
-        <li className="w-[14%] h-[100%] flex items-center hover:bg-gray-100 text-white justify-center cursor-pointer hover:text-gray-600 ">
-          Housekeeping
-        </li>
-        <li className="w-[14%] h-[100%] flex items-center hover:bg-gray-100 text-white justify-center cursor-pointer hover:text-gray-600">
-          Construction
-        </li>
-        <li className="w-[14%] h-[100%] flex items-center hover:bg-gray-100 text-white justify-center cursor-pointer hover:text-gray-600">
-          Healthcare
-        </li>
-        <li className="w-[14%] h-[100%] flex items-center hover:bg-gray-100 text-white justify-center cursor-pointer hover:text-gray-600">
-          Food
-        </li>
-        <li className="w-[14%] h-[100%] flex items-center hover:bg-gray-100 text-white justify-center cursor-pointer hover:text-gray-600">
-          Security
-        </li>
-      </ul>
     </div>
   );
 };
