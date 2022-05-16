@@ -15,7 +15,7 @@ const Sidebar = () => {
           />
         </div>
         <div className="pl-[5px]">
-          <div className="text-[#333333] font-sans text-[24px]">
+          <div className="text-black font-bold font-sans text-[24px]">
             Linus Gordon
           </div>
           <div className="text-[#7F7F7F] font-sans">Food -29yo 🇧🇮</div>

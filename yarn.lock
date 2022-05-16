@@ -1039,6 +1039,11 @@
     "merge2" "^1.4.1"
     "slash" "^3.0.0"
 
+"hamt_plus@1.0.2":
+  "integrity" "sha1-4hwlKWjH4zsg9qGwlM2FeHomVgE="
+  "resolved" "https://registry.npmjs.org/hamt_plus/-/hamt_plus-1.0.2.tgz"
+  "version" "1.0.2"
+
 "has-bigints@^1.0.1":
   "integrity" "sha512-LSBS2LjbNBTf6287JEbEzvJgftkF5qFkmCo9hDRpAzKhUOlJ+hx8dd4USs00SgsUNwc4617J9ki5YtEClM2ffA=="
   "resolved" "https://registry.npmjs.org/has-bigints/-/has-bigints-1.0.1.tgz"
@@ -1666,7 +1671,7 @@
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   "version" "16.13.1"
 
-"react@^17.0.2 || ^18.0.0-0", "react@^18.0.0", "react@>= 16", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@18.0.0":
+"react@^17.0.2 || ^18.0.0-0", "react@^18.0.0", "react@>= 16", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=16.13.1", "react@>=16.8.0", "react@18.0.0":
   "integrity" "sha512-x+VL6wbT4JRVPm7EGxXhZ8w8LTROaxPXOqhlGyVSrv0sB1jkyFGgXxJ8LVoPRLvPR6/CIZGFmfzqUa2NYeMr2A=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.0.0.tgz"
   "version" "18.0.0"
@@ -1679,6 +1684,13 @@
   "version" "3.6.0"
   dependencies:
     "picomatch" "^2.2.1"
+
+"recoil@^0.7.3-alpha.2":
+  "integrity" "sha512-8LL4T8Bh7WMA5/ka+420PCenaUFie0457kyxX7cy/gsyRlbIGYpyNkAyU0znCvtHTN2clVYkTjGF6zKJ/DzzJg=="
+  "resolved" "https://registry.npmjs.org/recoil/-/recoil-0.7.3-alpha.2.tgz"
+  "version" "0.7.3-alpha.2"
+  dependencies:
+    "hamt_plus" "1.0.2"
 
 "regenerator-runtime@^0.13.4":
   "integrity" "sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA=="
@@ -1959,6 +1971,11 @@
   "version" "4.4.1"
   dependencies:
     "punycode" "^2.1.0"
+
+"usehooks-ts@^2.5.2":
+  "integrity" "sha512-keONG+M5aax8eN9kEZeayNBgK+7MSLVGCuP18pSdce5D5iLiImCxqkm04GWYSkA7Xpo0GWnPOK3cXAOY/K+T1g=="
+  "resolved" "https://registry.npmjs.org/usehooks-ts/-/usehooks-ts-2.5.2.tgz"
+  "version" "2.5.2"
 
 "util-deprecate@^1.0.2":
   "integrity" "sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8="

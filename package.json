@@ -13,7 +13,9 @@
     "confetti-js": "^0.0.18",
     "next": "12.1.4",
     "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "react-dom": "18.0.0",
+    "recoil": "^0.7.3-alpha.2",
+    "usehooks-ts": "^2.5.2"
   },
   "devDependencies": {
     "@types/node": "17.0.23",

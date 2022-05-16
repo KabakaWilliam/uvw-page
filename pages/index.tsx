@@ -1,8 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { useRecoilState } from "recoil";
+import NavOptionState from "../atoms/NavOptionsState";
+import AnimatedPeople from "../components/AnimatedPeople";
+import FaceBubble from "../components/FaceBubble";
 import Navbar from "../components/Navbar";
+import NavOptions from "../components/NavOptions";
 import ProfileContainer from "../components/ProfileContainer";
 import styles from "../styles/Home.module.css";
 
@@ -14,13 +19,9 @@ const scrollToTop = () => {
 };
 
 const Home: NextPage = () => {
-  // useEffect(() => {
-  //   const confettiSettings = { target: "my-canvas" };
-  //   const confetti = new ConfettiGenerator(confettiSettings);
-  //   confetti.render();
+  const [bubbleDistance, setBubbleDistance] = useState("[0vh]");
+  const [optionsHidden, setOptionsHidden] = useRecoilState(NavOptionState);
 
-  //   return () => confetti.clear();
-  // }, []);
   return (
     <div className="">
       <Head>
@@ -29,18 +30,21 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="w-screen h-screen z-30 ">
-        <div className="bg-gray-500 w-screen h-[5vh] flex items-center justify-center text-gray-300">
-          United Voices of The World
+        <div className="bg-[#59D6F6] text-[#0F3649] w-screen h-[5vh] flex items-center justify-center ">
+          UNITED VOICES OF THE WORLD
         </div>
         <section className="w-screen h-[35vh]  flex-col flex items-center gap-y-10">
-          <div className="flex flex-col justify-start items-center ">
+          <div className="text-[#59D6F6] flex flex-col justify-start items-center ">
             <span className="text-[80px]">STORIES</span>
             <span className="text-[40px]">OF OUR PEOPLE</span>
           </div>
-
+          {/* <div className=" transition ease-in-out delay-100 translate-y-100"> */}
+          <div className="z-40 absolute top-[90vh] animate-fade-in-up ">
+            <FaceBubble />
+          </div>
           <button
             onClick={() => scrollToTop()}
-            className="border-[5px] rounded-lg border-black w-[196px] h-[68px] text-[20px] hover:bg-red-300 hover:text-black"
+            className="border-[1px] rounded-sm border-[#59D6F6] w-[196px] h-[68px] text-[20px] text-[#59D6F6] font-sans font-thin hover:bg-[#59D6F6] hover:text-black"
           >
             Explore
           </button>
@@ -48,10 +52,12 @@ const Home: NextPage = () => {
         <section className="w-screen h-[60vh] flex items-center justify-center ">
           <Image className="" src="/globe.svg" width={400} height={400} />
         </section>
+        {/* <AnimatedPeople /> */}
       </main>
 
       <section className="w-screen h-screen">
         <Navbar />
+        {!optionsHidden ? <NavOptions /> : null}
         <ProfileContainer />
       </section>
     </div>

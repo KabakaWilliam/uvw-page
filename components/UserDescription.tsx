@@ -1,12 +1,14 @@
 const UserDescription = () => {
   return (
     <div className="w-[37vw] h-screen border pt-[7vh] border-black px-[50px]">
-      <div className="text-[50px] text-[#333333]">Linus Gordon</div>
+      <div className="text-[50px] text-[#59D6F6]">Linus Gordon</div>
       <div className="font-sans text-[18px] text-[#7F7F7F]">
-        <div className="">Seychelles 🇧🇮</div>
+        <div className="w-max bg-[#CCCCCC] text-[#0F3649] rounded-[22px] px-2 py-2">
+          Seychelles 🇧🇮
+        </div>
         <div className="">Food </div>
       </div>
-      <div className="mt-[40px] font-sans text-[#333333]">
+      <div className="mt-[40px] font-sans text-[#CCCCCC]">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et magna
         mauris. Quisque non turpis eu nibh varius bibendum vitae a erat. Orci
         varius natoque penatibus et magnis dis parturient montes, nascetur
