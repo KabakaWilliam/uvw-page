@@ -4,7 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-.package-lock.json
+/package-lock.json
 
 # testing
 /coverage
@@ -34,3 +34,8 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+
+# add package-lock.json to .gitignore
+
+
