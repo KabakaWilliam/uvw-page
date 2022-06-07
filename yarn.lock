@@ -465,11 +465,6 @@
   "resolved" "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz"
   "version" "0.0.1"
 
-"confetti-js@^0.0.18":
-  "integrity" "sha512-0B7pYmZGBZuBkN32ydjWRpJLfRUT9KZYkQKkC4SGrAsUq0XE2DLY5foCWBXMXXVg7sFKs3qIb+qsDx1eFTeSvA=="
-  "resolved" "https://registry.npmjs.org/confetti-js/-/confetti-js-0.0.18.tgz"
-  "version" "0.0.18"
-
 "core-js-pure@^3.20.2":
   "integrity" "sha512-12VZfFIu+wyVbBebyHmRTuEE/tZrB4tJToWcwAMcsp3h4+sHR+fMJWbKpYiCRWlhFBq+KNyO8rIV9rTkeVmznQ=="
   "resolved" "https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.21.1.tgz"
@@ -1671,7 +1666,7 @@
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   "version" "16.13.1"
 
-"react@^17.0.2 || ^18.0.0-0", "react@^18.0.0", "react@>= 16", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=16.13.1", "react@>=16.8.0", "react@18.0.0":
+"react@^17.0.2 || ^18.0.0-0", "react@^18.0.0", "react@>= 16", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=16.13.1", "react@18.0.0":
   "integrity" "sha512-x+VL6wbT4JRVPm7EGxXhZ8w8LTROaxPXOqhlGyVSrv0sB1jkyFGgXxJ8LVoPRLvPR6/CIZGFmfzqUa2NYeMr2A=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.0.0.tgz"
   "version" "18.0.0"
@@ -1971,11 +1966,6 @@
   "version" "4.4.1"
   dependencies:
     "punycode" "^2.1.0"
-
-"usehooks-ts@^2.5.2":
-  "integrity" "sha512-keONG+M5aax8eN9kEZeayNBgK+7MSLVGCuP18pSdce5D5iLiImCxqkm04GWYSkA7Xpo0GWnPOK3cXAOY/K+T1g=="
-  "resolved" "https://registry.npmjs.org/usehooks-ts/-/usehooks-ts-2.5.2.tgz"
-  "version" "2.5.2"
 
 "util-deprecate@^1.0.2":
   "integrity" "sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8="
