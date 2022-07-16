@@ -21,6 +21,10 @@ const scrollToTop = () => {
 const Home: NextPage = () => {
   const [bubbleDistance, setBubbleDistance] = useState("[0vh]");
   const [optionsHidden, setOptionsHidden] = useRecoilState(NavOptionState);
+  const numBubbles = [
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
+    22, 23, 24, 25, 26, 27, 28, 29, 30,
+  ];
   return (
     <div className="">
       <Head>
@@ -44,16 +48,11 @@ const Home: NextPage = () => {
             <span className="text-[80px]">STORIES</span>
             <span className="text-[40px]">OF OUR PEOPLE</span>
           </div>
-          {/* <div className=" transition ease-in-out delay-100 translate-y-100"> */}
-          <div className="z-40 absolute top-[90vh] animate-fade-in-up ">
-            <FaceBubble imgLink="https://www.incimages.com/uploaded_files/image/1920x1080/getty_624206636_200013332000928034_376810.jpg" />
-          </div>
-          <div className="z-40 absolute top-[90vh] left-10 animate-fade-in-up ">
-            <FaceBubble imgLink="https://www.incimages.com/uploaded_files/image/1920x1080/getty_624206636_200013332000928034_376810.jpg" />
-          </div>
-          <div className="z-40 absolute top-[60vh] left-[40%] animate-fade-in-up ">
-            <FaceBubble imgLink="https://www.incimages.com/uploaded_files/image/1920x1080/getty_624206636_200013332000928034_376810.jpg" />
-          </div>
+          <>
+            {numBubbles.map((bubble) => (
+              <FaceBubble imgLink="https://www.incimages.com/uploaded_files/image/1920x1080/getty_624206636_200013332000928034_376810.jpg" />
+            ))}
+          </>
           <button
             onClick={() => scrollToTop()}
             className="border-[1px] rounded-sm border-[#59D6F6] w-[196px] h-[68px] text-[20px] text-[#59D6F6] z-40 font-sans font-thin hover:bg-[#59D6F6] hover:text-black"
@@ -61,10 +60,6 @@ const Home: NextPage = () => {
             Explore
           </button>
         </section>
-        {/* <section className="w-screen h-[60vh] flex items-center justify-center ">
-          <Image className="" src="/newGlobe.jpg" width={400} height={400} />
-        </section> */}
-        {/* <AnimatedPeople /> */}
       </main>
 
       <section className="w-screen h-screen">
