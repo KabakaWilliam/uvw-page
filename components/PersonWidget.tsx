@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useRecoilState } from "recoil";
+import SelectedUserState from "../atoms/SelectedUserState";
 
 interface personWidgetProps {
   name: string;
@@ -14,8 +16,19 @@ const PersonWidget = ({
   country,
   profilePicture,
 }: personWidgetProps) => {
+  const [selectedUser, setSelectedUser] = useRecoilState(SelectedUserState);
+  const selectUserHandler = async () => {
+    setSelectedUser(name);
+    console.log(name, "selected");
+  };
+  useEffect(() => {
+    console.log("heres the selected user inside use-effect:", selectedUser);
+  }, [selectedUser]);
   return (
-    <div className="flex w-[100%] h-[100px] border border-b-0 border-black border-r-0 cursor-pointer hover:bg-[#2f5a70]">
+    <div
+      onClick={() => selectUserHandler()}
+      className="flex w-[100%] h-[100px] border border-b-0 border-black border-r-0 cursor-pointer hover:bg-[#2f5a70]"
+    >
       <div className="w-[30%] h-[100%]  flex items-center justify-center">
         <img
           className="w-[80%] h-[80%] object-cover border border-black"

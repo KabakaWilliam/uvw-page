@@ -1,8 +1,6 @@
 import React from "react";
 import Sidebar from "./Sidebar";
-import UserDescription from "./UserDescription";
 import UserInfoSection from "./UserInfoSection";
-import UserMedia from "./UserMedia";
 
 const ProfileContainer = () => {
   return (

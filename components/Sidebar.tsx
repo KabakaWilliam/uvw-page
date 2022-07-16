@@ -1,6 +1,9 @@
+import { useRecoilState } from "recoil";
+import SelectedUserState from "../atoms/SelectedUserState";
 import PersonWidget from "./PersonWidget";
 
 const Sidebar = () => {
+  const [selectedUser, setSelectedUser] = useRecoilState(SelectedUserState);
   return (
     <div className="w-[20vw] h-[screen] border border-black border-r-0 flex flex-col items-center justify-center">
       <PersonWidget
