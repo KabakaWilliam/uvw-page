@@ -1,12 +1,14 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRecoilState } from "recoil";
 import NavOptionState from "../atoms/NavOptionsState";
+import SelectedUserState from "../atoms/SelectedUserState";
 import FaceBubble from "../components/FaceBubble";
 import Navbar from "../components/Navbar";
 import NavOptions from "../components/NavOptions";
 import ProfileContainer from "../components/ProfileContainer";
+import userData from "../Data/sampleData.json";
 
 const scrollToTop = () => {
   window.scrollTo({
@@ -16,8 +18,13 @@ const scrollToTop = () => {
 };
 
 const Home: NextPage = () => {
+  useEffect(() => {
+    setSelectedUser(userData[0]);
+  }, []);
   const [bubbleDistance, setBubbleDistance] = useState("[0vh]");
   const [optionsHidden, setOptionsHidden] = useRecoilState(NavOptionState);
+
+  const [selectedUser, setSelectedUser] = useRecoilState(SelectedUserState);
 
   const numBubbles = [
     "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHw%3D&w=1000&q=80",

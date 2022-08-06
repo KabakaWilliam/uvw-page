@@ -1,6 +1,7 @@
 import React from "react";
 import Sidebar from "./Sidebar";
 import UserInfoSection from "./UserInfoSection";
+import userData from "../Data/sampleData.json";
 
 const ProfileContainer = () => {
   return (
