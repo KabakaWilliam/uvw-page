@@ -35,7 +35,7 @@ const PersonWidget = ({ individualData }: personWidgetProps) => {
           <span>{individualData.industry}</span>
           <span> - </span>
           <span>{individualData.age} yo </span>
-          <span> {individualData.country} </span>
+          <span> {individualData.flag} </span>
         </div>
       </div>
     </div>
