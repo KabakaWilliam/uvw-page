@@ -9,10 +9,10 @@ const UserDescription = () => {
         {selectedUser.name == "" ? "Linus Gordon" : selectedUser.name}
       </div>
       <div className="font-sans text-[18px] flex gap-x-[27px]">
-        <div className="w-max text-[#CCCCCC] border border-[#59D6F6] rounded-[22px] px-3 py-2">
+        <div className="w-max cursor-pointer text-[#CCCCCC] border border-[#59D6F6]  hover:bg-[#0d4451] rounded-[22px] px-3 py-2">
           {selectedUser.country} {selectedUser.flag}
         </div>
-        <div className="w-max text-[#CCCCCC] border border-[#59D6F6] rounded-[22px] px-3 py-2">
+        <div className="w-max cursor-pointer text-[#CCCCCC] border border-[#59D6F6] hover:bg-[#0d4451] rounded-[22px] px-3 py-2">
           {selectedUser.job}
         </div>
       </div>
