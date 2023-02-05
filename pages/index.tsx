@@ -86,8 +86,8 @@ const Home: NextPage = () => {
         </div>
         <div className="h-[95vh] z-0  w-screen absolute">
           <img
-            src={"/newGlobe.jpg"}
-            className="opacity-[0.8] object-contain w-[100%] h-[100%]"
+            src={"/globe3.jpg"}
+            className="opacity-[0.8] object-cover w-[100%] h-[100%] "
           />
         </div>
         <section className="w-screen h-[35vh] z-40  flex-col flex items-center gap-y-10">
